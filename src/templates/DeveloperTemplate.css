@@ -1,0 +1,213 @@
+.dev-template {
+  padding: 44px 48px;
+  font-family: 'Inter', system-ui, sans-serif;
+  color: #1c1c28;
+  font-size: 10pt;
+  line-height: 1.5;
+  background: white;
+}
+
+.dev-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.dev-name {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 24pt;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #12121a;
+  line-height: 1;
+  margin-bottom: 6px;
+}
+
+.dev-title {
+  font-size: 11pt;
+  color: #6366f1; /* Professional Indigo */
+  font-weight: 600;
+  font-family: 'JetBrains Mono', monospace;
+  letter-spacing: -0.01em;
+}
+
+.dev-contact-right {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.dev-contact-item {
+  font-size: 8.5pt;
+  color: #55556e;
+}
+
+.dev-link {
+  color: #6366f1;
+}
+
+.dev-divider {
+  height: 1px;
+  background: #ebebf0;
+  margin-bottom: 24px;
+}
+
+.dev-body {
+  display: flex;
+  gap: 32px;
+}
+
+.dev-main-content {
+  flex: 2;
+}
+
+.dev-sidebar {
+  flex: 1;
+}
+
+.dev-section {
+  margin-bottom: 24px;
+}
+
+.dev-section-title {
+  margin-bottom: 12px;
+}
+
+.dev-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 8.5pt;
+  font-weight: 700;
+  color: #12121a;
+  background: #f5f5f8;
+  padding: 2px 8px;
+  border-radius: 4px;
+  letter-spacing: 0.1em;
+}
+
+.dev-text {
+  font-size: 9.5pt;
+  color: #3d3d54;
+  line-height: 1.6;
+}
+
+.dev-entry {
+  margin-bottom: 16px;
+}
+
+.dev-entry-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 2px;
+}
+
+.dev-entry-role {
+  font-size: 10.5pt;
+  font-weight: 700;
+  color: #12121a;
+}
+
+.dev-entry-date {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 8.5pt;
+  color: #7c7c96;
+}
+
+.dev-entry-company {
+  font-size: 9.5pt;
+  color: #6366f1;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.dev-bullets {
+  padding-left: 14px;
+  list-style-type: none;
+}
+
+.dev-bullets li {
+  font-size: 9.5pt;
+  color: #3d3d54;
+  margin-bottom: 4px;
+  position: relative;
+  padding-left: 12px;
+}
+
+.dev-bullets li::before {
+  content: '>';
+  position: absolute;
+  left: 0;
+  color: #6366f1;
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 700;
+}
+
+.dev-tech-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 8px;
+}
+
+.dev-tech-tag {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 8pt;
+  color: #55556e;
+  background: #f5f5f8;
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+/* Sidebar Styles */
+.dev-skills-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.dev-skill-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dev-skill-name {
+  font-size: 9.5pt;
+  font-weight: 600;
+  color: #12121a;
+}
+
+.dev-skill-level-text {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 8pt;
+  color: #7c7c96;
+}
+
+.dev-edu-entry {
+  margin-bottom: 12px;
+}
+
+.dev-edu-degree {
+  font-size: 9.5pt;
+  font-weight: 700;
+  color: #12121a;
+}
+
+.dev-edu-field {
+  font-size: 9pt;
+  color: #3d3d54;
+}
+
+.dev-edu-school {
+  font-size: 9pt;
+  color: #6366f1;
+  font-weight: 500;
+}
+
+.dev-edu-date {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 8pt;
+  color: #7c7c96;
+}

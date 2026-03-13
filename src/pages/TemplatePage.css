@@ -1,0 +1,209 @@
+.template-page {
+  padding: var(--space-8);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.template-page-header {
+  text-align: center;
+  margin-bottom: var(--space-12);
+}
+
+.tp-title {
+  font-family: var(--font-heading);
+  font-size: var(--text-5xl);
+  font-weight: 700;
+  color: var(--color-ink-900);
+  margin-bottom: var(--space-4);
+  letter-spacing: -0.03em;
+}
+
+.tp-subtitle {
+  font-size: var(--text-lg);
+  color: var(--color-text-secondary);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.template-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-8);
+}
+
+.template-gallery-card {
+  background: var(--color-white);
+  border-radius: var(--radius-2xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+  border: 1px solid var(--color-ink-100);
+}
+
+.template-gallery-card:hover {
+  box-shadow: var(--shadow-2xl);
+}
+
+.tg-preview-container {
+  position: relative;
+  aspect-ratio: 4 / 5;
+  background: var(--color-ink-50);
+  padding: var(--space-6);
+  overflow: hidden;
+}
+
+.tg-mini-preview {
+  width: 100%;
+  height: 100%;
+  background: white;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 12px;
+}
+
+.tg-header {
+  height: 20px;
+  width: 50%;
+  background: var(--color-ink-100);
+  border-radius: 4px;
+}
+
+.tg-row {
+  display: flex;
+  gap: 12px;
+  flex: 1;
+}
+
+.tg-side {
+  width: 30%;
+  height: 100%;
+  background: #f8f8fb;
+  border-radius: 4px;
+}
+
+.tg-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Template Specific Styles for Gallery Previews (Realistic Models) */
+.modern .tg-side { background: #12121a; }
+.modern .tg-header { background: #8b5cf6; width: 40%; }
+
+.executive .tg-header { width: 40%; background: #12121a; }
+.executive::after {
+  content: '';
+  position: absolute;
+  top: 60px;
+  left: 20px;
+  right: 20px;
+  height: 2px;
+  background: #d97706;
+}
+
+.developer .tg-mini-preview { background: #ffffff; border: 1.5px solid #ebebf0; }
+.developer .tg-header { background: #12121a; width: 50%; height: 15px; }
+.developer .tg-side { display: none; }
+.developer .tg-main { padding-left: 0; }
+.developer .tg-main::before {
+  content: '';
+  width: 40%;
+  height: 8px;
+  background: #6366f1;
+  display: block;
+}
+
+.creative .tg-mini-preview { border: 1.5px solid #ebebf0; }
+.creative .tg-header { 
+  width: 100%; 
+  height: 15%; 
+  background: white;
+  border-bottom: 2px solid #8b5cf6;
+  border-radius: 0;
+}
+.creative .tg-side { border-left: 1px solid #ebebf0; background: white; order: 2; }
+
+.minimal .tg-mini-preview { box-shadow: none; border: 1.5px solid #ebebf0; }
+
+.classic .tg-header { width: 30%; margin-inline: auto; height: 10px; border-bottom: 1.5px solid #12121a; background: none; border-radius: 0; }
+
+.tg-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(18, 18, 26, 0.4);
+  /* Removed backdrop-filter to prevent blur */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity var(--transition-base);
+}
+
+.template-gallery-card:hover .tg-overlay {
+  opacity: 1;
+}
+
+.tg-select-btn {
+  background: white;
+  color: var(--color-ink-900);
+  padding: 12px 24px;
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  font-family: var(--font-heading);
+  box-shadow: var(--shadow-xl);
+}
+
+.tg-info {
+  padding: var(--space-6);
+}
+
+.tg-name {
+  font-family: var(--font-heading);
+  font-size: var(--text-xl);
+  font-weight: 700;
+  color: var(--color-ink-900);
+  margin-bottom: var(--space-2);
+}
+
+.tg-desc {
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+  margin-bottom: var(--space-5);
+}
+
+.tg-link-btn {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  color: var(--color-violet-500);
+  font-weight: 600;
+  font-size: var(--text-sm);
+  font-family: var(--font-heading);
+  transition: gap var(--transition-fast);
+}
+
+.tg-link-btn:hover {
+  gap: var(--space-2);
+}
+
+@media (max-width: 1024px) {
+  .template-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .tp-title {
+    font-size: var(--text-3xl);
+  }
+
+  .template-gallery {
+    grid-template-columns: 1fr;
+  }
+}

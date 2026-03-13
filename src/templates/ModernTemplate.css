@@ -1,0 +1,268 @@
+.modern-template {
+  display: flex;
+  min-height: 297mm;
+  font-family: var(--font-body);
+  font-size: 10pt;
+  line-height: 1.5;
+  color: var(--color-ink-800);
+}
+
+.modern-sidebar {
+  width: 220px;
+  background: var(--gradient-sidebar);
+  color: var(--color-ink-100);
+  padding: 36px 24px;
+  flex-shrink: 0;
+}
+
+.modern-avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: var(--gradient-accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28pt;
+  font-weight: 700;
+  color: white;
+  margin: 0 auto 16px;
+  text-transform: uppercase;
+}
+
+.modern-name {
+  font-size: 16pt;
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 4px;
+  font-family: var(--font-heading);
+}
+
+.modern-title {
+  font-size: 9pt;
+  text-align: center;
+  color: #94a3b8;
+  margin-bottom: 24px;
+}
+
+.modern-sidebar-heading {
+  font-size: 9pt;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-accent-400);
+  font-weight: 600;
+  margin-bottom: 12px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  padding-bottom: 6px;
+}
+
+.modern-contact-section {
+  margin-bottom: 24px;
+}
+
+.modern-contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 8.5pt;
+  margin-bottom: 8px;
+  color: #cbd5e1;
+  word-break: break-word;
+}
+
+.modern-contact-icon {
+  font-size: 10pt;
+  flex-shrink: 0;
+  width: 16px;
+  text-align: center;
+}
+
+.modern-skills-section {
+  margin-bottom: 24px;
+}
+
+.modern-skills-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.modern-skill-item {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.modern-skill-name {
+  font-size: 8.5pt;
+  color: #e2e8f0;
+}
+
+.modern-skill-bar {
+  height: 4px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.modern-skill-fill {
+  height: 100%;
+  background: var(--gradient-accent);
+  border-radius: 2px;
+  transition: width 0.5s ease;
+}
+
+/* ── Main Content ── */
+.modern-main {
+  flex: 1;
+  padding: 36px 32px;
+}
+
+.modern-section {
+  margin-bottom: 22px;
+}
+
+.modern-section-title {
+  font-size: 13pt;
+  font-weight: 700;
+  color: var(--color-ink-900);
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: 'Outfit', sans-serif;
+}
+
+.modern-section-accent {
+  width: 4px;
+  height: 20px;
+  background: var(--gradient-accent);
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+.modern-summary {
+  font-size: 10pt;
+  color: #475569;
+  line-height: 1.7;
+}
+
+.modern-entry {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.modern-entry-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--color-accent-500);
+  flex-shrink: 0;
+  margin-top: 5px;
+  position: relative;
+}
+
+.modern-entry-dot::after {
+  content: '';
+  position: absolute;
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1.5px;
+  height: calc(100% + 20px);
+  background: #e2e8f0;
+}
+
+.modern-entry:last-child .modern-entry-dot::after {
+  display: none;
+}
+
+.modern-entry-content {
+  flex: 1;
+}
+
+.modern-entry-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 6px;
+}
+
+.modern-entry-role {
+  font-size: 11pt;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.modern-entry-company {
+  font-size: 9.5pt;
+  color: #64748b;
+}
+
+.modern-date {
+  font-size: 8.5pt;
+  color: #94a3b8;
+  white-space: nowrap;
+  font-weight: 500;
+}
+
+.modern-gpa {
+  font-size: 8pt;
+  color: #94a3b8;
+  margin-top: 2px;
+}
+
+.modern-bullets {
+  margin-top: 6px;
+  padding-left: 16px;
+  list-style-type: none;
+}
+
+.modern-bullets li {
+  font-size: 9.5pt;
+  color: #475569;
+  margin-bottom: 4px;
+  line-height: 1.5;
+  position: relative;
+  padding-left: 12px;
+}
+
+.modern-bullets li::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  color: var(--color-accent-500);
+  font-size: 10pt;
+}
+
+.modern-description {
+  font-size: 9.5pt;
+  color: #475569;
+  line-height: 1.5;
+  margin-top: 4px;
+}
+
+.modern-tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 6px;
+}
+
+.modern-tech-tag {
+  padding: 2px 8px;
+  background: rgba(234, 88, 12, 0.06);
+  color: var(--color-accent-600);
+  border-radius: 3px;
+  font-size: 8pt;
+  font-weight: 500;
+}
+
+.modern-project-link {
+  font-size: 8pt;
+  color: #3b82f6;
+  margin-top: 4px;
+}

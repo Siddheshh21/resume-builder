@@ -1,0 +1,29 @@
+.resume-editor {
+  height: 100%;
+  overflow-y: auto;
+  padding: var(--space-6);
+  padding-bottom: var(--space-20);
+}
+
+.editor-header {
+  margin-bottom: var(--space-6);
+}
+
+.editor-title {
+  font-family: var(--font-heading);
+  font-size: var(--text-2xl);
+  font-weight: 700;
+  color: var(--color-ink-900);
+  margin-bottom: var(--space-1);
+  letter-spacing: -0.02em;
+}
+
+.editor-subtitle {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+}
+
+.editor-sections {
+  display: flex;
+  flex-direction: column;
+}
