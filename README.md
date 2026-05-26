@@ -5,6 +5,7 @@ An AI-driven resume screening and candidate analysis system built to automate th
 The platform automatically analyzes resumes, extracts candidate insights, compares profiles against job descriptions, calculates fit scores, and generates structured outputs using an end-to-end automated workflow powered by n8n and OpenAI APIs.
 
 🚀 Features
+
 📄 Resume Parsing
 Supports PDF and DOCX resume uploads
 Automatically extracts:
@@ -13,6 +14,7 @@ Experience
 Strengths
 Missing requirements
 Candidate insights
+
 🧠 AI-Based Resume Analysis
 Compares resumes against provided job descriptions
 Calculates candidate fit scores
@@ -27,15 +29,18 @@ Automatic storage in Google Drive
 Resume parsing and AI analysis
 Structured output generation
 Logging results into Google Sheets
+
 📊 Recruiter Dashboard Output
 Organized candidate analysis
 Resume scoring
 Job-role alignment
 Candidate comparison insights
+
 ☁️ Cloud Integration
 Google Drive for resume storage
 Google Sheets for logging and tracking
 Automated document handling pipeline
+
 🏗️ Workflow Architecture
 Email Input
     ↓
@@ -54,6 +59,7 @@ Fit Score Calculation
 Google Sheets Logging
     ↓
 Structured Recruiter Dashboard
+
 🛠️ Tech Stack
 Layer	Technology
 Automation	n8n
