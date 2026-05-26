@@ -1,73 +1,64 @@
-# React + TypeScript + Vite
+AI-Powered Resume Analysis Agent 🎯
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An AI-driven resume screening and candidate analysis system built to automate the resume evaluation process for recruiters, hiring teams, and students.
 
-Currently, two official plugins are available:
+The platform automatically analyzes resumes, extracts candidate insights, compares profiles against job descriptions, calculates fit scores, and generates structured outputs using an end-to-end automated workflow powered by n8n and OpenAI APIs.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+🚀 Features
+📄 Resume Parsing
+Supports PDF and DOCX resume uploads
+Automatically extracts:
+Skills
+Experience
+Strengths
+Missing requirements
+Candidate insights
+🧠 AI-Based Resume Analysis
+Compares resumes against provided job descriptions
+Calculates candidate fit scores
+Performs risk vs reward analysis
+Generates structured recruiter-friendly insights
+⚙️ End-to-End Workflow Automation
 
-## React Compiler
+Built completely using n8n automation workflows:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Resume collection via email
+Automatic storage in Google Drive
+Resume parsing and AI analysis
+Structured output generation
+Logging results into Google Sheets
+📊 Recruiter Dashboard Output
+Organized candidate analysis
+Resume scoring
+Job-role alignment
+Candidate comparison insights
+☁️ Cloud Integration
+Google Drive for resume storage
+Google Sheets for logging and tracking
+Automated document handling pipeline
+🏗️ Workflow Architecture
+Email Input
+    ↓
+Resume Collection
+    ↓
+Google Drive Storage
+    ↓
+Resume Parsing
+    ↓
+OpenAI-Based Analysis
+    ↓
+Job Description Matching
+    ↓
+Fit Score Calculation
+    ↓
+Google Sheets Logging
+    ↓
+Structured Recruiter Dashboard
+🛠️ Tech Stack
+Layer	Technology
+Automation	n8n
+AI Processing	OpenAI API
+Storage	Google Drive
+Logging	Google Sheets
+Parsing	PDF/DOCX Resume Extraction
+Workflow Logic	LangChain-style Output Parsing
